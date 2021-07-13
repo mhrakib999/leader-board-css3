@@ -10,7 +10,9 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    
+    flex-direction: column ;
+    align-items: center;
 }
 .container{
     background: #FFFFFF;
@@ -18,6 +20,7 @@ main{
     width: 870px;
     height: 679px;
     padding: 30px;
+    margin-top: 21px;
 }
 .section-tittle{
     color: #562EFF;
@@ -47,23 +50,41 @@ hr{
     margin-top: 30px;
 }
 
-.blog-container{
 
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1.625em;
 }
 
-.blog-tittle{
+.blog-section{
     color: #562EFF;
+    ;
 }
 
-.blog{
-   display: flex;
+.blog {
+    display: flex;
 }
-
-.top-blogs img {
+.blog img {
     width: 177px;
     height: 117px;
 }
 
-.blogtext{
-    margin-left: 16px;
+.blog-info{
+    margin-left: 1em;
+}
+
+.blog-title{
+    font-size: 1.25em;
+}
+
+.blog-author{
+    color: #9F9F9F;
+
+}
+
+.blog-author a {
+    text-decoration: none;
+    color: #562EFF;
 }
